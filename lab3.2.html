@@ -1,0 +1,454 @@
+<html>
+<head>
+	<title></title>
+	<style>
+		@font-face {
+			font-family: Glyphicons Halflings; /* ֳאנםטעףנא רנטפעא */
+			src: url(glyphicons-halflings-regular.eot); /* ֿףע ך פאיכף סמ רנטפעמל */
+		}
+		#desktop{
+			background: #002050; /* Old browsers */
+			background: -moz-linear-gradient(top,  #002050 0%, #0c72c0 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#002050), color-stop(100%,#0c72c0)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #002050 0%,#0c72c0 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #002050 0%,#0c72c0 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #002050 0%,#0c72c0 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #002050 0%,#0c72c0 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002050', endColorstr='#0c72c0',GradientType=0 ); /* IE6-9 */
+			width: 1366px;
+			height: 697px;
+		}
+		#panelDown{
+			width: 1366px;
+			height: 39px;
+			border-top: 1px solid #478ec2;
+			background-color: #009BD6;
+		}
+		#panelDown > #icons{
+			margin-left: 50px;
+		}
+		#panelDown > #icons > div {
+			width: 50px;
+			height: 39px;
+			margin-left: 7px;
+			float: left;
+			text-align: center;
+		}
+		#panelDown > #icons > #one {
+			color: #FFF;
+			font-size: 25px;
+		}
+		#panelDown > #icons > div > img {
+			width: inherit;
+		}
+		#puskButton{
+			position: absolute;
+			width: 50px;
+			height: 40px;
+			background-color: #1b75bb;
+			border-top: 1px solid #1b75bb;
+			top: 704px;
+		}
+		#puskButton > img{
+			width: 34px;
+			margin-left: 8px;
+			margin-top: 3px;
+		}
+		#pusk{
+			position: absolute;
+			top: 184px;
+			width: 783px;
+			height: 518px;
+			background-color: #1b75bb;
+			border-top: 2px solid #006ba7;
+			border-right: 2px solid #006ba7;
+			border-bottom: 2px solid #006ba7;
+		}
+		#copyright{
+			color: #fff;
+			font-family: Corbel;
+			font-size: 17px;
+			position: relative;
+			left: 1164px;
+			top: 651px;
+			width: 201px
+		}
+		
+		#tray{
+			float: right;
+			width: 262px;
+			height: 39px;
+		}
+		#tray > #iconTray{
+			width: 32px;
+			height: 39px;
+			float: left;
+		}
+		#tray > #keyboard{
+			width: 50px;
+			height: 39px;
+			float: left;
+		}
+		#tray > #time{
+			width: 84px;
+			height: 37px;
+			float: left;
+			text-align: center;
+			color: #fff;
+			font-family: Corbel;
+			font-size: 14px;
+			padding-top: 2px;
+		}
+		
+		.rowmenu{
+			width: 249px;
+			height: 505px;
+			float:left;
+			padding:6px;
+		}
+		#menu{
+			
+		}
+		#menu > #item {
+			width: 246px;
+			height: 38px;
+			padding-left: 3px;
+			padding-right: 12px;
+		}
+		#menu > #search {
+			width: 246px;
+			height: 37px;
+			background-color:#FFF;
+			padding-left: 3px;
+		}
+		#menu > #search > #iconSearch {
+			position: relative;
+			top: 7px;
+			left: 218px;
+			color: #807f7d;
+		}
+		.allApps{
+			  margin-top: 26px;
+		}
+		.allApps > #icon{
+			font-size: 25px;
+			color: #fff;
+			font-family: monospace;
+			padding-left: 4px;
+			width: 28px;
+		}
+		#icon {
+			width: 32px;
+			height: 32px;
+			float: left;
+		}
+		#item > #icon > img{
+			width: inherit;
+		}
+		#title {
+			color: #FFF;
+			font-family: Corbel;
+			font-size: 16px;
+			width: 209px;
+			padding-top: 6px;
+			float: left;
+			padding-left: 5px;
+		}
+		.first > #icon{
+			width: 30px;
+			height: 30px;
+			background-image: url('img/antonio.png');
+			background-size: cover;
+		}
+		.first > #title{
+			font-size: 20px;
+			padding-top: 4px;
+			padding-left: 3px;
+		}
+		#iconsTile {
+		}
+		#iconsTileTwo {
+			padding-left: 2px;
+		}
+		#iconsDesktop{
+			position: absolute;
+		}
+		#iconsDesktop > div{
+			width: 80px;
+			height: 88px;
+			margin-left: 5px;
+		}
+		#iconsDesktop > div > #titleIcon{
+			color: #fff;
+			font-size: 14px;
+			text-align:center;
+			font-family: Corbel;
+			text-shadow: 2px 1px 4px #323232;
+			position: relative;
+			top: 3px;
+		}
+		#iconsDesktop > div > img{
+			width: 48px;
+			margin-left: 16px;
+			margin-top: 9px;
+		}
+		hr {
+			padding:0;
+			margin:0 0 10px 0;
+			color: #609fd0;
+			background-color: #609fd0;
+			width: 100%;
+			height: 1px;
+			border:0px none;
+		}
+		#tile {
+			width: 118px;
+			height: 118px;
+			margin-bottom: 8px;
+			float: left;
+			position: relative;
+		}
+		#tileDual {
+			width: 248px;
+			height: 118px;
+			margin-bottom: 8px;
+			float: left;
+			position: relative;
+		}
+		#tileDual > #tileTitle{
+			height: 40px;
+			color: #FFF;
+			font-family: Corbel;
+			font-size: 12px;
+			position: relative;
+		}
+		#tileDual > #tileTitle > #iconTile {
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			left: 12px;
+			bottom: 6px;
+		}
+		
+		#tileDual > #tileTitle > #text{
+			width: 190px;
+			position: absolute;
+			left: 48px;
+			bottom: 8px;
+		}
+		#tile > #tileTitle{
+			color: #FFF;
+			font-size: 15px;
+			font-family: Corbel;
+			position: absolute;
+			bottom: 6px;
+			left: 14px;
+		}
+		.weather > #info{
+			font-family: Ebrima;
+			font-size: 13px;
+			padding: 5px 0 0 13px;
+			color: #fff;
+		}
+		.calendar > #info{
+			padding: 5px 0 0 13px;
+			color: #fff;
+			font-family: Corbel;
+			font-size: 15px;
+		}
+		.calendar > #info > #dig{
+			font-family: Ebrima;
+			font-size: 70px;
+			position: relative;
+			top: -14px;
+		}
+		
+		
+		.store{
+			border:1px solid #33a233;
+			margin-right: 8px;
+			background: #4096ee; /* Old browsers */
+			background: -moz-linear-gradient(left,  #4096ee 0%, #008b00 0%, #06a309 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,#4096ee), color-stop(0%,#008b00), color-stop(100%,#06a309)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(left,  #4096ee 0%,#008b00 0%,#06a309 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(left,  #4096ee 0%,#008b00 0%,#06a309 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(left,  #4096ee 0%,#008b00 0%,#06a309 100%); /* IE10+ */
+			background: linear-gradient(to right,  #4096ee 0%,#008b00 0%,#06a309 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#06a309',GradientType=1 ); /* IE6-9 */
+		}
+		.store > img{
+			width: 82px;
+			margin-left: 19px;
+			margin-top: 9px;
+		}
+		.email{
+			border:1px solid #1a88cc;
+			background: #4096ee; /* Old browsers */
+			background: -moz-linear-gradient(left,  #4096ee 0%, #0072c6 0%, #007fc6 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,#4096ee), color-stop(0%,#0072c6), color-stop(100%,#007fc6)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(left,  #4096ee 0%,#0072c6 0%,#007fc6 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(left,  #4096ee 0%,#0072c6 0%,#007fc6 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(left,  #4096ee 0%,#0072c6 0%,#007fc6 100%); /* IE10+ */
+			background: linear-gradient(to right,  #4096ee 0%,#0072c6 0%,#007fc6 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#007fc6',GradientType=1 ); /* IE6-9 */
+		}
+		.email > img{
+			width: 81px;
+			margin-left: 19px;
+			margin-top: 18px;
+		}
+		.calendar{
+			background-color: #5235ac;
+			border:1px solid #644ab4;
+			margin-right: 8px;
+		}
+		.calendar > #info > #day {
+			top: -30px;
+			left: 3px;
+			position: relative;
+		}
+		.weather{
+			background-color: #0b6eb5;
+			border:1px solid #3c8bc4;
+		}
+		.skype{
+			border:1px solid #1ac1f2;
+			margin-right: 8px;
+			background: #4096ee; /* Old browsers */
+			background: -moz-linear-gradient(left,  #4096ee 0%, #00aff0 0%, #00c2f2 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,#4096ee), color-stop(0%,#00aff0), color-stop(100%,#00c2f2)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(left,  #4096ee 0%,#00aff0 0%,#00c2f2 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(left,  #4096ee 0%,#00aff0 0%,#00c2f2 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(left,  #4096ee 0%,#00aff0 0%,#00c2f2 100%); /* IE10+ */
+			background: linear-gradient(to right,  #4096ee 0%,#00aff0 0%,#00c2f2 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#00c2f2',GradientType=1 ); /* IE6-9 */
+		}
+		.skype > img {
+			width: 75px;
+			margin-left: 21px;
+			margin-top: 9px;			
+		}
+		.music{
+			background-color: #F84E24;
+			border:1px solid #d75c3d;
+		}
+		.music > img{
+			width: 75px;
+			margin-left: 21px;
+			margin-top: 13px;
+		}
+		.video{
+			border:1px solid #b63052;
+			margin-right: 8px;
+			background: #D51543; /* Old browsers */
+			
+		}
+		.video  > img{
+			width: 75px;
+			margin-left: 22px;
+			margin-top: 11px;
+		}
+		.onedrive{
+			border:1px solid #2368c6;
+			background: #4096ee; /* Old browsers */
+			background: -moz-linear-gradient(left,  #4096ee 0%, #094ab2 0%, #0a5bc4 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,#4096ee), color-stop(0%,#094ab2), color-stop(100%,#0a5bc4)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(left,  #4096ee 0%,#094ab2 0%,#0a5bc4 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(left,  #4096ee 0%,#094ab2 0%,#0a5bc4 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(left,  #4096ee 0%,#094ab2 0%,#0a5bc4 100%); /* IE10+ */
+			background: linear-gradient(to right,  #4096ee 0%,#094ab2 0%,#0a5bc4 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#0a5bc4',GradientType=1 ); /* IE6-9 */
+		}
+		.onedrive > img{
+			width: 75px;
+			margin-left: 22px;
+			margin-top: 10px;
+		}
+		.twitter{
+			background-color: #00AEF1;
+			border:1px solid #66b4f0;
+			margin-right: 8px;
+		}
+		.twitter > img{
+			width: 75px;
+			margin-left: 23px;
+			margin-top: 10px;
+		}
+		.minion{
+			background-image: url('img/tileMinion.jpg');
+			background-size: cover;
+			border: 1px solid #31a9f0;
+		}
+		.nigga > #tileDualImage{
+			background-image: url('img/tileNigga.jpg');
+			background-size: cover;
+			height: 78px;
+		}
+		.nigga > #tileTitle{
+			background-color: #BA133E;
+			border:1px solid #ae3356;
+		}
+		.nigga > #tileTitle > #iconTile > img{
+			width: inherit;
+		}
+	</style>
+</head>
+<body>
+	<div id="desktop"> <!--ֳמעמג-->
+		<div id="iconsDesktop">
+			<div id="one"><img src="img/one.png"><div id="titleIcon">Recycle Bin</div></div>
+			<div id="two"><img src="img/two.png"><div id="titleIcon">Welcome to<br>Tech Preview</div></div>
+		</div>
+		
+		<div id="pusk">
+			<div class="rowmenu" id="menu">
+				<div id="item" class="first"><div id="icon"></div><div id="title">Antonio Onio</div></div>
+				<hr>
+				<div id="item"><div id="icon"><img src="img/documents.png"></div><div id="title">Documents</div></div>
+				<div id="item"><div id="icon"><img src="img/pictures.png"></div><div id="title">Pictures</div></div>
+				<div id="item"><div id="icon"><img src="img/nastroika.png"></div><div id="title">PC settings</div></div>
+				<div id="item"><div id="icon"><img src="img/fileexp.png"></div><div id="title">File Explorer</div></div>
+				<hr>
+				<div id="item"><div id="icon"><img src="img/spin.png"></div><div id="title">Sniping Tool</div></div>
+				<div id="item"><div id="icon"><img src="img/calculator.png"></div><div id="title">Calculator</div></div>
+				<div id="item"><div id="icon"><img src="img/paint.png"></div><div id="title">Paint</div></div>
+				<div id="item"><div id="icon"><img src="img/stick.png"></div><div id="title">Sticky Notes</div></div>
+				<div id="item"><div id="icon"><img src="img/games.png"></div><div id="title">Games</div></div>
+				<div id="item" class="allApps"><div id="icon">&#8594;</div><div id="title">All Apps</div></div>
+				<div id="search"><div id="iconSearch">&#128270;</div></div>
+			</div>
+			<div class="rowmenu" id="iconsTile">
+				<div id="tile" class="store"><img src="img/store.png"><div id="tileTitle">Store</div></div>
+				<div id="tile" class="email"><img src="img/mail.png"><div id="tileTitle">Mail</div></div>
+				<div id="tile" class="calendar"><div id="info"><div id="dig">30</div><div id="day">Tuesday</div></div><div id="tileTitle">Calendar</div></div>
+				<div id="tile" class="weather"><div id="info"><span style="font-size:25px;">72&deg;</span><br>Los Angeles<br>Sunny<br>81&deg;/62&deg;</div><div id="tileTitle">Weather</div></div>
+				<div id="tile" class="skype"><img src="img/skype.png"><div id="tileTitle">Skype</div></div>
+				<div id="tile" class="music"><img src="img/music.png"><div id="tileTitle">Музыка</div></div>
+				<div id="tile" class="video"><img src="img/video.png"><div id="tileTitle">Видео</div></div>
+				<div id="tile" class="onedrive"><img src="img/onedrive.png"><div id="tileTitle">OneDrive</div></div>
+			</div>
+			<div class="rowmenu" id="iconsTileTwo">
+				<div id="tile" class="twitter"><img src="img/twitter.png"><div id="tileTitle">Twitter</div></div>
+				<div id="tile" class="minion"></div>
+				<div id="tileDual" class="nigga"><div id="tileDualImage"></div><div id="tileTitle"><div id="iconTile"><img src="img/naggaIcon.png"></div><div id="text">Innovative ways to teach computers to kids</div></div></div>
+			</div>
+		</div>
+		<div id="copyright">
+			Windows Technical Preview<br>
+			Evaluation copy. Build 9841
+		</div>
+	</div>
+	<div id="panelDown"><!--ֳמעמג-->
+		<div id="puskButton"><img src="img/win.png"></div>
+		<div id="icons"><div id="one">&#128270;</div><div><img src="img/gotodesk.png"></div><div><img src="img/ie.png"></div><div><img src="img/fileexpbig.png"></div><div><img src="img/magaz.png"></div><div><img src="img/gamesbig.png"></div></div>
+		<div id="tray">
+			<div id="keyboard"><img src="img/keyboard.png" style="width: 33px; margin-top:8px;"></div>
+			<div id="iconTray"><img src="img/vverh.png" style="width: 16px; margin-top:11px; margin-left:3px;"></div>
+			<div id="iconTray"><img src="img/flag.png" style="width: 23px; margin-top:8px;"></div>
+			<div id="iconTray"><img src="img/wifi.png" style="width: 25px; margin-top:7px;"></div>
+			<div id="iconTray"><img src="img/volume.png" style="width: 23px; margin-top:9px; margin-left:4px;"></div>
+			<div id="time">10:24 AM<br>9/30/2014</div>
+		</div>
+	</div>
+</body>
+</html>

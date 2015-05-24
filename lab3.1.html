@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт</title>
+	<style type="text/css">
+	.wrapper {
+		perspective: 1000px;
+		perspective-origin: 50% 600px;
+		margin: 300px;
+	}
+	.cubebox {
+		position: relative;
+		width: 150px;
+		transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+	}
+	.cubebox div {
+		position: absolute;
+		width: 150px;
+		height: 150px;
+		background: #6293C2;
+		box-shadow: inset 0 0 69px #000000;
+		font-size: 20px;
+		text-align: center;
+		line-height: 150px;
+		color: #FFF;
+		font-family: sans-serif;
+		text-transform: uppercase;
+	}
+
+	.back {
+		transform: translateZ(-75px) rotateY(180deg);
+		-webkit-transform: translateZ(-75px) rotateY(180deg);
+	}
+	.right {
+		transform: rotateY(-270deg) translateX(75px);
+		transform-origin: top right;
+		-webkit-transform: rotateY(-270deg) translateX(75px);
+		-webkit-transform-origin: top right;
+	}
+	.left {
+		transform: rotateY(270deg) translateX(-75px);
+		transform-origin: center left;
+		-webkit-transform: rotateY(270deg) translateX(-75px);
+		-webkit-transform-origin: center left;
+	}
+	.top {
+		transform: rotateX(-90deg) translateY(-75px);
+		transform-origin: top center;
+		-webkit-transform: rotateX(-90deg) translateY(-75px);
+		-webkit-transform-origin: top center;
+	}
+	.bottom {
+		transform: rotateX(90deg) translatey(75px);
+		transform-origin: bottom center;
+		-webkit-transform: rotateX(90deg) translatey(75px);
+		-webkit-transform-origin: bottom center;
+	}
+	.front {
+		transform: translateZ(75px);
+		-webkit-transform: translateZ(75px);
+	}
+	@keyframes spin {
+		from { transform: rotateX(0); }
+		to { transform: rotateX(360deg); }
+	}
+	@-webkit-keyframes spin {
+		from { transform: rotateX(0); }
+		to { transform: rotateX(360deg); }
+	}
+
+	.cubebox {
+		animation: spin 5s infinite linear;
+		-webkit-animation: spin 5s infinite linear;
+	}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="cubebox">
+		<div class="front">front</div>
+		<div class="back">back</div>
+		<div class="top">top</div>
+		<div class="bottom">bottom</div>
+		<div class="left">left</div>
+		<div class="right">right</div>
+	</div>
+</div>
+</body>
+</html>
